@@ -1,0 +1,180 @@
+---
+import SectionContainer from "../components/SectionContainer.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="FutbolProTraining - Entrenamiento de futbol para todos">
+  <main
+    class="flex flex-col gap-10 px-6 py-6 bg-green-50 dark:bg-green-900 items-center"
+  >
+    <img
+      alt="Logo"
+      class="size-64"
+      src="/fpt_logo.svg"
+      alt="Logo futbol pro training"
+    />
+    <SectionContainer
+      id="entrenamientos"
+      class="flex flex-col items-center text-center gap-6"
+    >
+      <h1 class="text-4xl md:text-5xl font-bold">
+        Eleva Tus Habilidades de Fútbol
+      </h1>
+      <p class="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl">
+        Únete a nuestros programas de entrenamiento y lleva tu juego al
+        siguiente nivel.
+      </p>
+      <button
+        type="button"
+        class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-200 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700"
+      >
+        <a href="#contacto"> Regístrate Ahora</a>
+      </button>
+    </SectionContainer>
+    <SectionContainer
+      id="entrenamientos"
+      class="grid grid-cols-1 md:grid-cols-3 gap-6"
+    >
+      <div
+        class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md dark:bg-gray-800"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-12 w-12 mb-4"
+        >
+          <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"
+          ></path>
+          <line x1="4" x2="4" y1="22" y2="15"></line>
+        </svg>
+        <h2 class="text-2xl md:text-3xl font-bold">
+          Entrenamiento Principiantes
+        </h2>
+        <p class="text-gray-600 dark:text-gray-400">
+          Aprende los conceptos básicos y construye una base sólida.
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md dark:bg-gray-800"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-12 w-12 mb-4"
+        >
+          <polygon points="13 19 22 12 13 5 13 19"></polygon>
+          <polygon points="2 19 11 12 2 5 2 19"></polygon>
+        </svg>
+        <h2 class="text-2xl md:text-3xl font-bold">Habilidades Avanzadas</h2>
+        <p class="text-gray-600 dark:text-gray-400">
+          Mejora tus habilidades y tácticas para el juego competitivo.
+        </p>
+      </div>
+      <div
+        class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md dark:bg-gray-800"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-12 w-12 mb-4"
+        >
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+        </svg>
+        <h2 class="text-2xl md:text-3xl font-bold">Entrenamiento Fisico</h2>
+        <p class="text-gray-600 dark:text-gray-400">
+          Entrenamiento especializado para aumentar fuerza y resistencia.
+        </p>
+      </div>
+    </SectionContainer>
+    <SectionContainer
+      id="sobre-nosotros"
+      class="flex flex-col items-center gap-6"
+    >
+      <h2 class="text-3xl md:text-4xl font-bold">Nuestros Entrenadores</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
+        <div
+          class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md dark:bg-gray-800"
+        >
+          <img
+            src="/coach_1.webp"
+            alt="Coach 1"
+            class="h-24 w-24 rounded-full mb-4"
+            width="100"
+            height="100"
+            style="aspect-ratio: 100 / 100; object-fit: cover;"
+          />
+          <h3 class="text-xl md:text-2xl font-bold">Entrenador Yamir</h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            Con más de 10 años de experiencia, Yamir se especializa en
+            entrenamiento fisico y tactico.
+          </p>
+        </div>
+        <div
+          class="flex flex-col items-center text-center p-6 bg-white rounded-lg shadow-md dark:bg-gray-800"
+        >
+          <img
+            src="/coach_2.webp"
+            alt="Coach 2"
+            class="h-24 w-24 rounded-full mb-4"
+            width="100"
+            height="100"
+            style="aspect-ratio: 100 / 100; object-fit: cover;"
+          />
+          <h3 class="text-xl md:text-2xl font-bold">Entrenador Mateo</h3>
+          <p class="text-gray-600 dark:text-gray-400">
+            Mateo se enfoca en el desarrollo de habilidades y ha entrenado a
+            numerosos jugadores profesionales.
+          </p>
+        </div>
+      </div>
+    </SectionContainer>
+    <SectionContainer id="contacto" class="flex flex-col items-center gap-6">
+      <h2 class="text-3xl md:text-4xl font-bold">Contáctanos</h2>
+      <form class="w-full max-w-md md:max-w-lg">
+        <div class="flex flex-col space-y-4">
+          <input
+            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            id="name"
+            placeholder="Nombre"
+          />
+          <input
+            class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            id="email"
+            placeholder="Email"
+            type="email"
+          />
+          <textarea
+            class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+            id="message"
+            placeholder="Dinos en que podemos ayudarte"></textarea>
+          <button
+            type="button"
+            class="text-gray-900 bg-gradient-to-r from-teal-200 to-lime-200 hover:bg-gradient-to-l hover:from-teal-200 hover:to-lime-200 focus:ring-4 focus:outline-none focus:ring-lime-200 dark:focus:ring-teal-700 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+            >Enviar</button
+          >
+        </div>
+      </form>
+    </SectionContainer>
+  </main>
+</Layout>
