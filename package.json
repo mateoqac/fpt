@@ -12,6 +12,7 @@
   "dependencies": {
     "@astrojs/check": "^0.3.4",
     "@astrojs/tailwind": "^5.1.0",
+    "@astrojs/sitemap": "^3.0.0",
     "@fontsource-variable/onest": "^5.0.2",
     "astro": "^4.1.1",
     "caniuse-lite": "^1.0.30001664",
